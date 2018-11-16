@@ -1,13 +1,6 @@
-#print(float("210" * int(input("Enter a number:" ))))
-#enter number: 2
-#int ( 2 ) * "210"
-# => "210210"
-#float("210210")
-#=> 210210.0
-
 #Input a word
 x = input("Enter a French verb (press Enter to exit): \n")
-#print(x[(l-2):(l)])
+
 ck = True
 # loop
 while ck :
@@ -17,7 +10,6 @@ while ck :
         break
     if x[(l-2):(l)] == 'ir':
         drop = x[0: (l-2)]
-        #print(drop)
         je = 'is'
         tu = 'is'
         ilElle = 'it'
@@ -33,7 +25,6 @@ while ck :
     elif x[(l-2):(l)] == 'er' :
         print( 'It is regular verb. ')
         drop = x[0: (l - 2)]
-        # print(drop)
         je = 'e'
         tu = 'es'
         ilElle = 'e'
@@ -49,7 +40,6 @@ while ck :
     elif x[(l-2):(l)] == 're' :
         print( 'It is regular verb. ')
         drop = x[0: (l - 2)]
-        # print(drop)
         je = 's'
         tu = 's'
         ilElle = ''
@@ -65,6 +55,6 @@ while ck :
         print()
     else :
         print("Not a regular verb, TYPO or Irregular Verb (>,<)")
-        x = input("Try another French noun (press Enter to exit): \n")
+        x = input("Try another French verb (press Enter to exit): \n")
         continue
-    x = input("Enter another French noun (press Enter to exit): \n")
+    x = input("Enter another French verb (press Enter to exit): \n")
